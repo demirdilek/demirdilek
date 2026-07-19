@@ -1,21 +1,13 @@
-## Hi there 👋
+# Hi there! 👋
 
-## About Me
-* 🛠️ **Environment:** Fully terminal-driven workspace centered around Vim and stable Linux environments. 
-* 🚀 **Current Focus:** Deep diving into SRE principles and optimizing edge architectures (Retail Edge).
-* 🎯 **Goal:** Mastering advanced Vim workflows and building highly robust, concurrent Go applications.
+I am a Software and Site Reliability Engineer (SRE) enthusiast focused on building robust, concurrent systems and highly efficient infrastructure.
 
-<!--
-**demirdilek/demirdilek** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### 🛠️ Core Stack & Workflow
+* **Languages:** Go (Golang) — my primary choice for building scalable, high-performance applications.
+* **Infrastructure:** Linux environments, Docker, Docker Compose (with strict resource constraints), and Prometheus.
+* **Workspace:** Fully terminal-driven workflows, utilizing Vim for clean, efficient, and distraction-free development.
 
-Here are some ideas to get you started:
+### 🚀 Current Projects
+* **Retail Edge Monitoring:** Developing a lightweight, autarkic SRE monitoring stack in Go that tracks the **4 Golden Signals** (Latency, Traffic, Errors, Saturation) for distributed edge systems. Features native config reloading without restarts.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+*Navigating Linux with Vim, one shortcut at a time.*
