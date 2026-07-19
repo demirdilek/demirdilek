@@ -1,5 +1,10 @@
 ## Hi there 👋
 
+## About Me
+* 🛠️ **Environment:** Fully terminal-driven workspace centered around Vim and stable Linux environments. 
+* 🚀 **Current Focus:** Deep diving into SRE principles and optimizing edge architectures (Retail Edge).
+* 🎯 **Goal:** Mastering advanced Vim workflows and building highly robust, concurrent Go applications.
+
 <!--
 **demirdilek/demirdilek** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
