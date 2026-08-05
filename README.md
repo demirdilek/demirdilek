@@ -1,13 +1,31 @@
-# Hi there! 👋
+# Hi, I'm Hüseyin 👋
 
-I am a Software and Site Reliability Engineer (SRE) enthusiast focused on building robust, concurrent systems and highly efficient infrastructure.
+Software & Site Reliability Engineer (SRE) focused on building high-performance, concurrent Go microservices and Kubernetes-native infrastructure.
 
-### 🛠️ Core Stack & Workflow
-* **Languages:** Go (Golang) — my primary choice for building scalable, high-performance applications.
-* **Infrastructure:** Linux environments, Docker, Docker Compose (with strict resource constraints), and Prometheus.
-* **Workspace:** Fully terminal-driven workflows, utilizing Vim for clean, efficient, and distraction-free development.
+---
 
-### 🚀 Current Projects
-* **api-prober:** Developing a lightweight, autarkic SRE monitoring stack in Go that tracks the 4 Golden Signals (Latency, Traffic, Errors, Saturation) for distributed edge systems. Features dynamic target updates and hot-reloading worker goroutines without application restarts.
+### 🛠️ Core Tech Stack
+
+* **Language:** Go (Golang) — Primary language for building concurrent, low-latency microservices.
+* **Orchestration & Infrastructure:** Kubernetes, Helm, Argo CD (GitOps), Docker, Linux (Ubuntu LTS).
+* **Observability & SRE:** Prometheus, Grafana, Alertmanager, 4 Golden Signals, SRE Error Classification.
+* **Development Workflow:** Terminal-driven development with Vim & CLI-first toolchains.
+
+---
+
+### 🚀 Key Projects
+
+* **[kube-prober](https://github.com/demirdilek/kube-prober)**
+  A lightweight, Kubernetes-native probing engine built in Go. Dynamically discovers endpoints via `discoveryv1.EndpointSlice` informers and exports 4 Golden Signals telemetry with 6-tier SRE error classification and automated Alertmanager escalation.
+
+---
+
+### ⚡ Highlights & Engineering Principles
+
+* **High Availability & Resilience:** Production-ready architectures featuring PodDisruptionBudgets (PDB), HorizontalPodAutoscaler (HPA), and TopologySpreadConstraints.
+* **GitOps-First:** Continuous Delivery managed declaratively with automated self-healing.
+* **Minimalist Runtimes:** Multi-stage scratch Docker builds optimized for minimal attack surfaces (~20 MB images).
+
+---
 
 *Navigating Linux with Vim, one shortcut at a time.*
