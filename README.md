@@ -1,30 +1,31 @@
-# Hi, I'm Hüseyin 👋
+# Hi, I'm Hüseyin
 
 Software & Site Reliability Engineer (SRE) focused on building high-performance, concurrent Go microservices and Kubernetes-native infrastructure.
 
 ---
 
-### 🛠️ Core Tech Stack
+### Core Tech Stack
 
 * **Language:** Go (Golang) — Primary language for building concurrent, low-latency microservices.
-* **Orchestration & Infrastructure:** Kubernetes, Helm, Argo CD (GitOps), Docker, Linux (Ubuntu LTS).
-* **Observability & SRE:** Prometheus, Grafana, Alertmanager, 4 Golden Signals, SRE Error Classification.
+* **Orchestration & Infrastructure:** Kubernetes, Helm, Argo CD (GitOps), Docker, Linux.
+* **Observability & SRE:** Prometheus, Grafana, Alertmanager, 4 Golden Signals, Multi-Window SLO Burn Rates.
 * **Development Workflow:** Terminal-driven development with Vim & CLI-first toolchains.
 
 ---
 
-### 🚀 Key Projects
+### Key Projects
 
 * **[kube-prober](https://github.com/demirdilek/kube-prober)**
-  A lightweight, Kubernetes-native probing engine built in Go. Dynamically discovers endpoints via `discoveryv1.EndpointSlice` informers and exports 4 Golden Signals telemetry with 6-tier SRE error classification and automated Alertmanager escalation.
+  A zero-coordination, Kubernetes-native probing engine built in Go. Features a Dual-Informer architecture (`EndpointSlice` + `StaticTarget` CRDs), stateless Rendezvous Hashing (HRW) sharding, multi-protocol health monitoring (HTTP, TCP, TLS, gRPC, DNS), and automated 4 Golden Signals telemetry with diagnostic hints for Prometheus and Alertmanager. Documented with 23 Architecture Decision Records (ADRs).
 
 ---
 
-### ⚡ Highlights & Engineering Principles
+### Highlights & Engineering Principles
 
-* **High Availability & Resilience:** Production-ready architectures featuring PodDisruptionBudgets (PDB), HorizontalPodAutoscaler (HPA), and TopologySpreadConstraints.
-* **GitOps-First:** Continuous Delivery managed declaratively with automated self-healing.
-* **Minimalist Runtimes:** Multi-stage scratch Docker builds optimized for minimal attack surfaces (~20 MB images).
+* **High Availability & Resilience:** Production-grade deployments leveraging PodDisruptionBudgets (PDB), HorizontalPodAutoscaler (HPA), and TopologySpreadConstraints.
+* **Stateless Distributed Sharding:** Rendezvous Hashing across replicas to eliminate duplicate network probes under dynamic horizontal scaling.
+* **GitOps-First:** Continuous Delivery and declarative cluster state reconciliation managed via Argo CD.
+* **Minimalist & Hardened Runtimes:** Multi-stage `scratch` base images running non-root (`nobody`) with read-only root filesystems and dropped capabilities.
 
 ---
 
