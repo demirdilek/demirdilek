@@ -1,32 +1,28 @@
 # Hi, I'm Hüseyin
 
-Software & Site Reliability Engineer (SRE) focused on building high-performance, concurrent Go microservices and Kubernetes-native infrastructure.
+Software Developer building backend services and distributed systems with Go. Currently contributing to the Kubernetes ecosystem.
 
 ---
 
-### Core Tech Stack
+### Upstream Contributions
 
-* **Language:** Go (Golang) — Primary language for building concurrent, low-latency microservices.
-* **Orchestration & Infrastructure:** Kubernetes, Helm, Argo CD (GitOps), Docker, Linux.
-* **Observability & SRE:** Prometheus, Grafana, Alertmanager, 4 Golden Signals, Multi-Window SLO Burn Rates.
-* **Development Workflow:** Terminal-driven development with Vim & CLI-first toolchains.
+* **[sigs.k8s.io/controller-runtime](https://github.com/kubernetes-sigs/controller-runtime)**: Propagated manager logger to leader election via context ([PR #3576](https://github.com/kubernetes-sigs/controller-runtime/pull/3576)) *(Merged)*
+* **[kubernetes/kubernetes](https://github.com/kubernetes/kubernetes)**: Upstream build maintenance and toolchain fixes ([PR #141625](https://github.com/kubernetes/kubernetes/pull/141625)), ([PR #141623](https://github.com/kubernetes/kubernetes/pull/141623)), ([PR #141537](https://github.com/kubernetes/kubernetes/pull/141537))
 
 ---
 
-### Key Projects
+### Projects
 
-* **[kube-prober](https://github.com/demirdilek/kube-prober)**
-  A zero-coordination, Kubernetes-native probing engine built in Go. Features a Dual-Informer architecture (`EndpointSlice` + `StaticTarget` CRDs), stateless Rendezvous Hashing (HRW) sharding, multi-protocol health monitoring (HTTP, TCP, TLS, gRPC, DNS), and automated 4 Golden Signals telemetry with diagnostic hints for Prometheus and Alertmanager. Documented with 23 Architecture Decision Records (ADRs).
+* **[kube-prober](https://github.com/demirdilek/kube-prober)**: Distributed probing service written in Go. Uses stateless target sharding with Rendezvous Hashing (HRW), concurrent workers (HTTP/HTTPS, TCP, gRPC, DNS), and automated Prometheus metrics with provisioned Grafana dashboard. Documented with Architecture Decision Records (ADRs).
+  
+---
+
+### Tech Stack & Tools
+
+* **Language:** Go (Golang)
+* **Systems & Tools:** Kubernetes, Docker, Linux, Git, Helm Charts, Argo CD 
+* **Environment:** Terminal workflow with Vim/Neovim, tmux, and CLI tools
 
 ---
 
-### Highlights & Engineering Principles
-
-* **High Availability & Resilience:** Production-grade deployments leveraging PodDisruptionBudgets (PDB), HorizontalPodAutoscaler (HPA), and TopologySpreadConstraints.
-* **Stateless Distributed Sharding:** Rendezvous Hashing across replicas to eliminate duplicate network probes under dynamic horizontal scaling.
-* **GitOps-First:** Continuous Delivery and declarative cluster state reconciliation managed via Argo CD.
-* **Minimalist & Hardened Runtimes:** Multi-stage `scratch` base images running non-root (`nobody`) with read-only root filesystems and dropped capabilities.
-
----
-
-*Navigating Linux with Vim, one shortcut at a time.*
+*Focusing on clean, concurrent Go code and learning distributed systems from the inside out.*
