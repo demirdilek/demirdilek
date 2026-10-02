@@ -6,8 +6,8 @@ Software Developer building backend services and distributed systems with Go. Cu
 
 ### Upstream Contributions
 
-* **[sigs.k8s.io/controller-runtime](https://github.com/kubernetes-sigs/controller-runtime)**: Propagated manager logger to leader election via context ([PR #3576](https://github.com/kubernetes-sigs/controller-runtime/pull/3576)) *(Merged)*
-* **[kubernetes/kubernetes](https://github.com/kubernetes/kubernetes)**: Upstream build maintenance and toolchain fixes ([PR #141625](https://github.com/kubernetes/kubernetes/pull/141625)), ([PR #141623](https://github.com/kubernetes/kubernetes/pull/141623)), ([PR #141537](https://github.com/kubernetes/kubernetes/pull/141537))
+* **[sigs.k8s.io/controller-runtime](https://github.com/kubernetes-sigs/controller-runtime)**: Passes the manager logger with name leaderelection via context to leaderElector.Run(), ensuring contextual logging in client-go uses the configured manager logger instead of falling back to the global logger. ([PR #3576](https://github.com/kubernetes-sigs/controller-runtime/pull/3576)) *(Merged)*
+* **[kubernetes/kubernetes](https://github.com/kubernetes/kubernetes)**: Bumps the Agnhost image tag to 2.66.1 in test/utils/image/manifest.go on the release-1.36 branch to consume the updated pre-built e2e test image. ([PR #141537](https://github.com/kubernetes/kubernetes/pull/141537)) *(Merged)*
 
 ---
 
