@@ -6,8 +6,13 @@ Software Developer building backend services and distributed systems with Go. Cu
 
 ### Upstream Contributions
 
-* **[sigs.k8s.io/controller-runtime](https://github.com/kubernetes-sigs/controller-runtime)**: Passes the manager logger with name leaderelection via context to leaderElector.Run(), ensuring contextual logging in client-go uses the configured manager logger instead of falling back to the global logger. ([PR #3576](https://github.com/kubernetes-sigs/controller-runtime/pull/3576)) *(Merged)*
-* **[kubernetes/kubernetes](https://github.com/kubernetes/kubernetes)**: Bumps the Agnhost image tag to 2.66.1 in test/utils/image/manifest.go on the release-1.36 branch to consume the updated pre-built e2e test image. ([PR #141537](https://github.com/kubernetes/kubernetes/pull/141537)) *(Merged)*
+**Merged:**
+* **sigs.k8s.io/controller-runtime:** Passes the manager logger with name `leaderelection` via context to `leaderElector.Run()`, ensuring contextual logging in client-go uses the configured manager logger. ([PR #3576](https://github.com/kubernetes-sigs/controller-runtime/pull/3576))
+* **kubernetes/kubernetes:** Updated agnhost test image tag to 2.66.1 for e2e tests. ([PR #141537](https://github.com/kubernetes/kubernetes/pull/141537))
+
+**In Review / Active:**
+* **kubernetes/kubernetes (API Machinery):** Sort map keys to ensure deterministic CEL validation order in apiextensions. ([PR #143271](https://github.com/kubernetes/kubernetes/pull/143271))
+* **kubernetes/kubernetes (Kubelet / Storage):** Propagate `context.Context` through storage and `nodeinfomanager` methods to ensure consistent lifecycle and cancellation control. ([PR #141726](https://github.com/kubernetes/kubernetes/pull/141726), [PR #142585](https://github.com/kubernetes/kubernetes/pull/142585))
 
 ---
 
