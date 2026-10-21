@@ -18,7 +18,7 @@ Software Developer building backend services and distributed systems with Go. Cu
 
 ### Projects
 
-* **[kube-prober](https://github.com/demirdilek/kube-prober)**: Distributed probing service written in Go. Uses stateless target sharding with Rendezvous Hashing (HRW), concurrent workers (HTTP/HTTPS, TCP, gRPC, DNS), and automated Prometheus metrics with provisioned Grafana dashboard. Documented with Architecture Decision Records (ADRs).
+* **[kube-prober](https://github.com/demirdilek/kube-prober)**: Distributed probing service written in Go. Uses stateless target sharding with Rendezvous Hashing (HRW), concurrent workers (HTTP/HTTPS, TCP, gRPC, DNS), and automated Prometheus metrics with provisioned Grafana dashboard. Documented with Architectural Decision Records (ADRs).
   
 ---
 
