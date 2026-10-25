@@ -30,7 +30,7 @@ Software Developer building backend services and distributed systems with Go. Cu
 
 ---
 
-*Focusing on clean, concurrent Go code and learning distributed systems from the inside out.*
+*Focusing on clean, concurrent Go code and building distributed systems from the inside out.*
 
 ---
 
