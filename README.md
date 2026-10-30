@@ -11,6 +11,8 @@ Software Developer building backend services and distributed systems with Go. Cu
 * **kubernetes/kubernetes:** Updated agnhost test image tag to 2.66.1 for e2e tests. ([PR #141537](https://github.com/kubernetes/kubernetes/pull/141537))
 
 **In Review / Active:**
+
+- **kubernetes/kubernetes (SIG Storage):** Prevent data loss in `mount-utils` (`getDiskFormat`) on `blkid` exit code 2 via Linux VFS device validation and hermetic `t.TempDir()` tests. Fixes 2020 issue #95183. ([PR #143489](https://github.com/kubernetes/kubernetes/pull/143489))
 * **kubernetes/kubernetes (API Machinery):** Sort map keys to ensure deterministic CEL validation order in apiextensions. ([PR #143271](https://github.com/kubernetes/kubernetes/pull/143271))
 * **kubernetes/kubernetes (Kubelet / Storage):** Propagate `context.Context` through storage and `nodeinfomanager` methods to ensure consistent lifecycle and cancellation control. ([PR #141726](https://github.com/kubernetes/kubernetes/pull/141726), [PR #142585](https://github.com/kubernetes/kubernetes/pull/142585))
 
